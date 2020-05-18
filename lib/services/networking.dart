@@ -11,6 +11,7 @@ class NetworkHelper {
       String data = response.body;
 
       var decodedData = jsonDecode(data);
+      return decodedData;
     } else {
       print(response.statusCode);
     }
